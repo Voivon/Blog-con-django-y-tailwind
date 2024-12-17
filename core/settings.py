@@ -27,7 +27,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'Blog',
+    
+    'tailwind',
+    'theme',
 ]
+TAILWIND_APP_NAME = 'theme'
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -69,7 +78,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
+NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd"
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
